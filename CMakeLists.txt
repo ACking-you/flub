@@ -18,6 +18,7 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/src/flub/*.h)
 
 add_library(${PROJECT_NAME} INTERFACE)
 target_include_directories(${PROJECT_NAME} INTERFACE ${PROJECT_SOURCE_DIR}/src)
+target_include_directories(${PROJECT_NAME} INTERFACE ${PROJECT_SOURCE_DIR}/third-part)
 
 
 if (ENABLE_FLUB_TEST)
